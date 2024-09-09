@@ -1,1 +1,175 @@
 [2024-09-04 19:36:55,115: INFO: main: Welcome to our custom  log]
+[2024-09-09 18:27:27,843:ERROR:main:name 'STAGE_NAME' is not defined]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 5, in <module>
+    logger.info(f">>>>>>>>> stage {STAGE_NAME} started <<<<<<")
+NameError: name 'STAGE_NAME' is not defined
+[2024-09-09 18:31:08,310:INFO:main:>>>>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-09 18:31:08,326:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-09 18:31:08,336:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-09 18:31:08,338:INFO:common:created directory at: artifacts]
+[2024-09-09 18:31:08,349:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-09-09 18:31:09,664:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 09 Sep 2024 13:01:09 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=517=iads6fxmkCV5uHl1iYcHwqqPBv-T1sfIS4yLek8DHHnopK4beAXoDfDszSkQ7BN4pDLJBP3lB90oTxceU1NWWw7cSyhnI3VX1r9-mnldvQ1kX70Y9aLqATTW3njT30OgX_XLVl_OpLM8OAWPxNcjcV1rJ7-Vfg5hc8vwZC2uLBI; expires=Tue, 11-Mar-2025 13:01:08 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2024-09-09 18:31:09,914:ERROR:main:File is not a zip file]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 10, in <module>
+    obj.main()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\components\data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-09-09 18:32:47,413:INFO:main:>>>>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-09 18:32:47,416:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-09 18:32:47,418:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-09 18:32:47,419:INFO:common:created directory at: artifacts]
+[2024-09-09 18:32:47,420:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-09-09 18:32:48,238:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 09 Sep 2024 13:02:48 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=517=HonhC7P7BYQXzB5aT_NkDBKPwE58bQqlMZmefRKCa_t7yeDy4z2J9SQdXO3MoO5t0Hcr8gg5T4eDHY4SlTzgdgs0QigIu8KOx5mxmhJJDtD4XkFwUyo5BdeJmSCspRQnhchK1VYvjjT03A7MpcK-uS_L4849XnuA5Uzp4bbe1rY; expires=Tue, 11-Mar-2025 13:02:47 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2024-09-09 18:32:48,498:ERROR:main:File is not a zip file]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 10, in <module>
+    obj.main()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\components\data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-09-09 19:22:54,731:INFO:main:>>>>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-09 19:22:54,734:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-09 19:22:54,735:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-09 19:22:54,736:INFO:common:created directory at: artifacts]
+[2024-09-09 19:22:54,737:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-09-09 19:22:55,481:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 09 Sep 2024 13:52:55 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=517=jB6l4ynpAcjk_1Mc8Ach7AzLXzr_Dga69nZdi_LmryI5gGY49-5q7ZN3mjiH_WVQp-e2LYszSa8L_CSTwkUOHrlCuF6jK3ZITjkLWrfVFQqKTNGgg_qQljCAbrGp-NMkCrA_c8XfelYdUJF_dajfLuzLLjS5yhCFXCXNDnipgxQ; expires=Tue, 11-Mar-2025 13:52:55 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2024-09-09 19:22:55,735:ERROR:main:File is not a zip file]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\components\data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-09-09 19:45:13,497:INFO:main:>>>>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-09 19:45:13,499:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-09 19:45:13,501:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-09 19:45:13,502:INFO:common:created directory at: artifacts]
+[2024-09-09 19:45:13,503:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-09-09 19:45:14,244:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 09 Sep 2024 14:15:14 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=517=BM13JZOLFVr2jd9b49pwi1cqQrw4Y9yj7AJUtaIly4QQSeKSk2TDC2mofu0r_Z7AeuJZjRO-PCe41WMpZdJPAkA2XDKZ0l-s_m6I-LkcRU_OtOmknaGEe4oRzXrSrd8JfeScrniWVn9OJ1hQzQWtDqLi4PIdWcyXPjZdpsDD-BVG3-7Q5A; expires=Tue, 11-Mar-2025 14:15:13 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2024-09-09 19:45:14,498:ERROR:main:File is not a zip file]
+Traceback (most recent call last):
+  File "D:\PROJECTS\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.extract_zip_file()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\cnnClassifier\components\data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-09-09 20:24:45,116:INFO:main:>>>>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-09 20:24:45,118:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-09 20:24:45,120:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-09 20:24:45,121:INFO:common:created directory at: artifacts]
+[2024-09-09 20:24:45,121:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-09-09 20:24:45,122:INFO:data_ingestion:File already exists of size: ~ 918887 KB]
+[2024-09-09 20:24:56,457:INFO:main:>>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=========x]
