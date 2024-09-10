@@ -173,3 +173,51 @@ zipfile.BadZipFile: File is not a zip file
 [2024-09-09 20:24:56,457:INFO:main:>>>>>>> stage Data Ingestion stage completed <<<<<<
 
 x=========x]
+[2024-09-10 10:28:00,698:WARNING:module_wrapper:From c:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-10 10:41:21,172:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-10 10:41:21,189:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-10 10:41:21,191:INFO:common:created directory at: artifacts]
+[2024-09-10 10:41:21,193:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-09-10 10:47:44,219:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-10 10:47:44,225:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-10 10:47:44,228:INFO:common:created directory at: artifacts]
+[2024-09-10 10:47:44,231:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-09-10 10:47:55,334:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-10 10:47:55,338:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-10 10:47:55,341:INFO:common:created directory at: artifacts]
+[2024-09-10 10:47:55,345:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-09-10 10:49:15,584:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-10 10:49:15,590:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-10 10:49:15,592:INFO:common:created directory at: artifacts]
+[2024-09-10 10:49:15,596:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-09-10 10:49:15,805:WARNING:module_wrapper:From c:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-10 10:49:16,185:WARNING:module_wrapper:From c:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-10 10:49:28,507:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-10 11:22:57,865:WARNING:module_wrapper:From C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-09-10 11:22:58,699:INFO:main:>>>>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-09-10 11:22:58,701:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-10 11:22:58,703:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-10 11:22:58,703:INFO:common:created directory at: artifacts]
+[2024-09-10 11:22:58,704:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-09-10 11:22:58,704:INFO:data_ingestion:File already exists of size: ~ 918887 KB]
+[2024-09-10 11:23:08,175:INFO:main:>>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=========x]
+[2024-09-10 11:23:08,175:INFO:main:*******************]
+[2024-09-10 11:23:08,176:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-09-10 11:23:08,177:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-09-10 11:23:08,178:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-09-10 11:23:08,179:INFO:common:created directory at: artifacts]
+[2024-09-10 11:23:08,179:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-09-10 11:23:08,313:WARNING:module_wrapper:From C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-09-10 11:23:08,418:WARNING:module_wrapper:From C:\Users\Rahil Khan\AppData\Local\Programs\Python\Python39\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-09-10 11:23:08,757:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-09-10 11:23:09,007:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
